@@ -347,9 +347,36 @@
   [hidden] {
     display: none;
   }
+
+
+  /*------------------------- основной css ------------------------- */
   .wrapper{
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+  .header{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_wrapper{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+    &_upper{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
+
+  /*------------------------- основной css ------------------------- */

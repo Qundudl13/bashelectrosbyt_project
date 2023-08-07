@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -308,9 +309,35 @@ template {
   display: none;
 }
 
+/*------------------------- основной css ------------------------- */
 .wrapper {
   width: 100%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}/*# sourceMappingURL=style_main.css.map */
+}
+
+.header {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+.header_upper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*------------------------- основной css ------------------------- *//*# sourceMappingURL=style_main.css.map */
