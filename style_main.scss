@@ -7,7 +7,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
+}
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -348,6 +353,45 @@
     display: none;
   }
 
+/*--------Переменные--------*/
+$assets_path : "/bashelectrosbyt_project/assets/img/";
+
+/*--------Переменные--------*/
+
+
+
+
+  /*-------Миксины-------*/
+  @mixin flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flex-center-column(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin flex-start-column(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  @mixin flex-spacebetween(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @mixin wrapper-inner(){
+    height: 100%;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+
+   /*-------Миксины-------*/
 
   /*------------------------- основной css ------------------------- */
   .wrapper{
@@ -359,23 +403,113 @@
   .header{
     height: 200px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 13px;
     &_wrapper{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
+        @include wrapper-inner();
+        @include flex-center-column();
+       
     }
     &_upper{
         padding-top: 20px;
         padding-bottom: 20px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-spacebetween();
+        &_control{
+            display: flex;
+            width: fit-content;
+            justify-content: flex-start;
+            gap:18px;
+            &_find{
+                position: relative;
+                &_input{
+                    padding-left: 20px;
+                    border-radius: 10px;
+                    border: 1px solid #BBBCBD;
+                    opacity: 0.4;
+                    outline: none;
+                    background: var(--white, #FFF);
+                    width: 270px;
+                    height: 42px;
+                }
+                &:before{
+                    content: "";
+                    position: absolute;
+                    right:  20px;
+                    top:   14px;
+                    width: 14px;
+                    height: 14px;
+                    background: url(#{$assets_path}svg/find.svg);
+                }
+            }
+            &_loweye{
+                cursor: pointer;
+            }
+        }
+    }
+    &_downer{
+        @include flex-center();
+        width: 100%;
+        &_nav{
+            @include flex-spacebetween();
+            width: 100%;
+            &_link{
+                @include flex-center-column();
+                gap:10px;
+                text-decoration: none;
+                &_text{
+                    color: #00427E;
+                    font-family: HeliosCond;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+  }
+  .footer{
+    width: 100%;
+    background: #EFF4F9;
+    padding-bottom: 108px;
+    @include flex-center();
+    &_wrapper{
+        margin-top: 67px;
+        @include wrapper-inner();
+        @include flex-spacebetween();
+    }
+    &_part{
+        @include flex-center-column();
+        @include flex-start-column();
+        &_send{
+            cursor: pointer;
+            border-radius: 5px;
+            background: #F28B00;
+            width: 335px;
+            height: 63px;
+            color: #FFF;
+            font-family: HeliosCond;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 18px;
+            position: relative;
+            padding-left: 20px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            &:before{
+                content: "";
+                position: absolute;
+                width: 24px;
+                height: 10px;
+                right: 20px;
+                top: 26px;
+                background: url(#{$assets_path}svg/arrow_white.svg);
+
+            }
+        }
     }
   }
 

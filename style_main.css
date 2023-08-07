@@ -6,6 +6,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -129,8 +135,6 @@ sup {
  * Remove the border on images inside links in IE 10.
  */
 img {
-  width: 100%;
-  height: 100%;
   border-style: none;
 }
 
@@ -311,6 +315,10 @@ template {
   display: none;
 }
 
+/*--------Переменные--------*/
+/*--------Переменные--------*/
+/*-------Миксины-------*/
+/*-------Миксины-------*/
 /*------------------------- основной css ------------------------- */
 .wrapper {
   width: 100%;
@@ -325,13 +333,17 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 13px;
 }
 .header_wrapper {
   height: 100%;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
 }
 .header_upper {
   padding-top: 20px;
@@ -340,6 +352,120 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header_upper_control {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.header_upper_control_find {
+  position: relative;
+}
+.header_upper_control_find_input {
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 1px solid #BBBCBD;
+  opacity: 0.4;
+  outline: none;
+  background: var(--white, #FFF);
+  width: 270px;
+  height: 42px;
+}
+.header_upper_control_find:before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 14px;
+  height: 14px;
+  background: url(/bashelectrosbyt_project/assets/img/svg/find.svg);
+}
+.header_upper_control_loweye {
+  cursor: pointer;
+}
+.header_downer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header_downer_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header_downer_nav_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.header_downer_nav_link_text {
+  color: #00427E;
+  font-family: HeliosCond;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer {
+  width: 100%;
+  background: #EFF4F9;
+  padding-bottom: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_wrapper {
+  margin-top: 67px;
+  height: 100%;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.footer_part_send {
+  cursor: pointer;
+  border-radius: 5px;
+  background: #F28B00;
+  width: 335px;
+  height: 63px;
+  color: #FFF;
+  font-family: HeliosCond;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  padding-left: 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.footer_part_send:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 10px;
+  right: 20px;
+  top: 26px;
+  background: url(/bashelectrosbyt_project/assets/img/svg/arrow_white.svg);
 }
 
 /*------------------------- основной css ------------------------- *//*# sourceMappingURL=style_main.css.map */
