@@ -1,5 +1,5 @@
 <?require("header.php")?>
-Рома лох
+рома лох
     
 <?require("footer.php")?>
 
