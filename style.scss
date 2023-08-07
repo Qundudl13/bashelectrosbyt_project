@@ -1,6 +1,14 @@
-.wrapper{
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    .main-slider {
+        margin-left: auto;
+        margin-right: auto;
+        &_img_wrapper{
 
-    &_box{
-        color: red;
+        }
+        &_scroll {
+            text-align: center;
+        }
     }
 }
