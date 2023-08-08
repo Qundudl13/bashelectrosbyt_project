@@ -7,6 +7,9 @@
     padding: 0;
     margin: 0;
 }
+a {
+    text-decoration: none
+}
 .wrapper {
     @include flex_column();
     width: 100%;
@@ -53,26 +56,74 @@
         }
     }
     .main-news {
+
         .main-heading {
-            position: relative;
             width: 100%;
-            &::after {
-                display: flex;
-                content: "Все новости";
-                background: url(/assets/img/svg/arrow-main-right.svg);
-                right: 20px;
-                position: absolute;
-                width: 22px;
-                height: 10px;
-            }
+            display: flex;
+            justify-content: space-between;
+            a {
+                color: #00427E;
+                font-family: HeliosCond;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                position: relative;
+                &:after {
+                    content: "";
+                    background: url(/assets/img/svg/arrow-main-right.svg);
+                    right: -23px;
+                    top: 6px;
+                    position: absolute;
+                    width: 22px;
+                    height: 10px;
+                }
+            }           
+        }
+        .main-news-list {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
         }
         &-item {
+            max-width: 370px;
+            position: relative;
+            &:hover .main-news-item-information::after {
+                content: "";
+                    background: url(/assets/img/svg/main-news-arrow-active.svg);
+                    bottom: -25px;
+                    position: absolute;
+                    width: 48px;
+                    height: 10px;
+            }
+            
             &-img {
                 margin-bottom: 10px;
             }
             &-information {
                 @include flex_column();
                 gap: 15px;
+                position: relative;
+                small {
+                    color: #484847;
+                }
+                .main-news-item-heading {
+                    color: #484847;
+                    font-family: Helios;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+                &::after {
+                    content: "";
+                    background: url(/assets/img/svg/main-news-arrow.svg);
+                    bottom: -25px;
+                    position: absolute;
+                    width: 24px;
+                    height: 10px;
+                }
+                
             }
         }
     }
