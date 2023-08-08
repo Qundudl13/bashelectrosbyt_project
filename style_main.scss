@@ -353,11 +353,34 @@
     display: none;
   }
 
+
+
+
 /*--------Переменные--------*/
 $assets_path : "/bashelectrosbyt_project/assets/img/";
 
 /*--------Переменные--------*/
 
+
+
+/*--------Шрифты--------*/
+@font-face {
+  font-family: 'Helios';
+  src: url(/bashelectrosbyt_project/assets/fonts/Helios/helios.otf);
+}
+@font-face {
+  font-family: 'HeliosCond';
+  src: url(/bashelectrosbyt_project/assets/fonts/Helios/helios.otf);
+}
+
+@font-face {
+  font-family: 'HeliosCondRegular';
+  src: url(/bashelectrosbyt_project/assets/fonts/HeliosCond/HeliosCond.ttf);
+  
+}
+
+
+/*--------Шрифты--------*/
 
 
 
@@ -394,6 +417,9 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
    /*-------Миксины-------*/
 
   /*------------------------- основной css ------------------------- */
+  body{
+    font-family: 'Helios';
+  }
   .wrapper{
     width: 100%;
     max-width: 1200px;
@@ -460,7 +486,7 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
                 text-decoration: none;
                 &_text{
                     color: #00427E;
-                    font-family: HeliosCond;
+                    font-family: 'HeliosCond';
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -479,6 +505,7 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
         margin-top: 67px;
         @include wrapper-inner();
         @include flex-spacebetween();
+        align-items: flex-start;
     }
     &_part{
         @include flex-center-column();
@@ -487,10 +514,11 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
             cursor: pointer;
             border-radius: 5px;
             background: #F28B00;
+            margin-top: 20px;
             width: 335px;
             height: 63px;
             color: #FFF;
-            font-family: HeliosCond;
+            font-family: 'HeliosCond';
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -510,7 +538,164 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
 
             }
         }
+        &_text{
+          color: #000;
+          font-family: 'HeliosCond';
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          margin-bottom: 12px;
+          line-height: 155%;
+          &_span{
+            margin-top: 5px;
+            color: #00427E;
+            font-family: Helios;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+           
+          }
+        }
+        &_map{
+          margin-top: 20px;
+        }
     }
   }
+  .main_title{
+    color: #000;
+    text-align: center;
+    font-family: Helios;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 28px;
+  }
+ 
 
   /*------------------------- основной css ------------------------- */
+
+  /*-------------------------Библиотека------------------------------*/
+  .libray_main_img{
+    @include flex-center();
+    margin-bottom: 60px;
+  }
+  .libray_text{
+    color: #4F4E4A;
+    text-align: center;
+    font-family: HeliosCondRegular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 970px;
+    width: 100%;
+    &_wrapper{
+      @include flex-center();
+      margin-bottom: 40px;
+    }
+  }
+  .library_list{
+    width: 100%;
+    @include flex-center();
+    flex-wrap: wrap;
+    gap:30px;
+    margin-bottom: 60px;
+    &_item{
+      border-radius: 10px;
+      background: #EFF4F9;
+      max-width: 370px;
+      height: 210px;
+      width: 100%;
+      @include flex-center-column();
+      gap:17px;
+      padding-top: 30px;
+      &_href{
+        color: #00427E;
+        text-align: center;
+        font-family: HeliosCondRegular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 210px;
+        width: 100%;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  /*-------------------------Библиотека------------------------------*/
+
+  /*-----------------Молодежный актив------------------*/
+  .yellow_button{
+    @include flex-center();
+    width: 240px;
+    height: 60px;
+    border-radius: 10px;
+    background: #F28B00;
+    color: #FFF;
+    text-align: center;
+    font-family: Helios;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    position: relative;
+    background: #F28B00;
+text-decoration: none;
+    &:before{
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 10px;
+      right: 20px;
+      top: 26px;
+      background: url(#{$assets_path}svg/arrow_white.svg);
+
+  }
+  }
+  /*-----------------Молодежный актив------------------*/
+  /*-----------------Сотруднику------------------*/
+  .sotrudnik_main_list{
+    @include flex-spacebetween();
+    margin-bottom: 200px;
+    flex-wrap: wrap;
+      &_item{
+        max-width: 370px;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+        background: #EFF4F9;
+        padding-left: 20px;
+        text-decoration: none;
+        position: relative;
+        &_text{
+          color: #00427E;
+          font-family: HeliosCondRegular;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+        }
+        &:before{
+          content: "\2192";
+        }
+      }
+  }
+
+
+
+
+
+
+
+  /*-----------------Сотруднику------------------*/

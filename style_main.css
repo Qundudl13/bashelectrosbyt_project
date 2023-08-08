@@ -317,9 +317,27 @@ template {
 
 /*--------Переменные--------*/
 /*--------Переменные--------*/
+/*--------Шрифты--------*/
+@font-face {
+  font-family: "Helios";
+  src: url(/bashelectrosbyt_project/assets/fonts/Helios/helios.otf);
+}
+@font-face {
+  font-family: "HeliosCond";
+  src: url(/bashelectrosbyt_project/assets/fonts/Helios/helios.otf);
+}
+@font-face {
+  font-family: "HeliosCondRegular";
+  src: url(/bashelectrosbyt_project/assets/fonts/HeliosCond/HeliosCond.ttf);
+}
+/*--------Шрифты--------*/
 /*-------Миксины-------*/
 /*-------Миксины-------*/
 /*------------------------- основной css ------------------------- */
+body {
+  font-family: "Helios";
+}
+
 .wrapper {
   width: 100%;
   max-width: 1200px;
@@ -407,7 +425,7 @@ template {
 }
 .header_downer_nav_link_text {
   color: #00427E;
-  font-family: HeliosCond;
+  font-family: "HeliosCond";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -430,6 +448,7 @@ template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
 }
 .footer_part {
   display: flex;
@@ -445,10 +464,11 @@ template {
   cursor: pointer;
   border-radius: 5px;
   background: #F28B00;
+  margin-top: 20px;
   width: 335px;
   height: 63px;
   color: #FFF;
-  font-family: HeliosCond;
+  font-family: "HeliosCond";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -467,5 +487,168 @@ template {
   top: 26px;
   background: url(/bashelectrosbyt_project/assets/img/svg/arrow_white.svg);
 }
+.footer_part_text {
+  color: #000;
+  font-family: "HeliosCond";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 12px;
+  line-height: 155%;
+}
+.footer_part_text_span {
+  margin-top: 5px;
+  color: #00427E;
+  font-family: Helios;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.footer_part_map {
+  margin-top: 20px;
+}
 
-/*------------------------- основной css ------------------------- *//*# sourceMappingURL=style_main.css.map */
+.main_title {
+  color: #000;
+  text-align: center;
+  font-family: Helios;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  line-height: 28px;
+}
+
+/*------------------------- основной css ------------------------- */
+/*-------------------------Библиотека------------------------------*/
+.libray_main_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.libray_text {
+  color: #4F4E4A;
+  text-align: center;
+  font-family: HeliosCondRegular;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 970px;
+  width: 100%;
+}
+.libray_text_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.library_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+.library_list_item {
+  border-radius: 10px;
+  background: #EFF4F9;
+  max-width: 370px;
+  height: 210px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  padding-top: 30px;
+}
+.library_list_item_href {
+  color: #00427E;
+  text-align: center;
+  font-family: HeliosCondRegular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 210px;
+  width: 100%;
+  text-decoration: none;
+}
+.library_list_item_href:hover {
+  text-decoration: underline;
+}
+
+/*-------------------------Библиотека------------------------------*/
+/*-----------------Молодежный актив------------------*/
+.yellow_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  background: #F28B00;
+  color: #FFF;
+  text-align: center;
+  font-family: Helios;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  position: relative;
+  background: #F28B00;
+  text-decoration: none;
+}
+.yellow_button:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 10px;
+  right: 20px;
+  top: 26px;
+  background: url(/bashelectrosbyt_project/assets/img/svg/arrow_white.svg);
+}
+
+/*-----------------Молодежный актив------------------*/
+/*-----------------Сотруднику------------------*/
+.sotrudnik_main_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+}
+.sotrudnik_main_list_item {
+  max-width: 370px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  background: #EFF4F9;
+  padding-left: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.sotrudnik_main_list_item_text {
+  color: #00427E;
+  font-family: HeliosCondRegular;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.sotrudnik_main_list_item:before {
+  content: "→";
+}
+
+/*-----------------Сотруднику------------------*//*# sourceMappingURL=style_main.css.map */
