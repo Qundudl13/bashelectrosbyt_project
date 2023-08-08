@@ -1,14 +1,170 @@
+@mixin flex_column() {
+    display: flex;
+    flex-direction: column;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none
+}
 .wrapper {
+    @include flex_column();
     width: 100%;
     max-width: 1200px;
-    .main-slider {
-        margin-left: auto;
-        margin-right: auto;
-        &_img_wrapper{
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    & > div {
+        margin-bottom: 85px;
+        @include flex_column();
+        gap: 10px;
+        padding: 30px 10px 30px 10px;
+    } 
+}
+    
+.main-heading {
+    color: #00427E;
+    font-family: Helios;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}    
+.main-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-img-wrapper{
+        width: 100%;
+        img {
+            border-radius: 30px;
         }
-        &_scroll {
-            text-align: center;
+    }
+    &-scroll {
+        display: flex;
+        position: absolute;
+        gap: 10px;
+        bottom: 45px;
+        div {
+            background: #FFF;
+            width: 9px;
+            height: 9px;
+            border-radius: 100%;
         }
     }
 }
+.main-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+        color: #00427E;
+        font-family: HeliosCond;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        right: 25px;
+        &:after {
+            content: "";
+            background: url(/assets/img/svg/arrow-main-right.svg);
+            right: -23px;
+            top: 6px;
+            position: absolute;
+            width: 22px;
+            height: 10px;
+        }
+    }
+}
+.main-section-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-news {
+    &-item {
+        max-width: 370px;
+        position: relative;
+        &:hover .main-news-item-information::after {
+            content: "";
+                background: url(/assets/img/svg/main-news-arrow-active.svg);
+                bottom: -25px;
+                position: absolute;
+                width: 48px;
+                height: 10px;
+        }
+        
+        &-img {
+            margin-bottom: 10px;
+        }
+        &-information {
+            @include flex_column();
+            gap: 15px;
+            position: relative;
+            small {
+                color: #484847;
+            }
+            .main-news-item-heading {
+                color: #484847;
+                font-family: Helios;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+            &::after {
+                content: "";
+                background: url(/assets/img/svg/main-news-arrow.svg);
+                bottom: -25px;
+                position: absolute;
+                width: 24px;
+                height: 10px;
+            }
+            
+        }
+    }
+}
+.honor-board {
+    background: #EFF4F9;
+    .main-section-list {
+        .board-item {
+            max-width: 270px;
+            &-information {
+                position: relative;
+                .name {
+                    color: #00427E;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 119.531%; 
+                }
+                small {
+                    color: #868786;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+                &::before {
+                    content: "";
+                    background: url(/assets/img/svg/main-arrow-circle.svg);
+                    position: absolute;
+                    width: 48px;
+                    height: 48px;
+                    z-index: 999;
+                    right: 0;
+                    top: -35px;
+                }   
+            }         
+        }
+        
+    }   
+}        
