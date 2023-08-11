@@ -49,6 +49,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .main-slider-img-wrapper {
   width: 100%;
@@ -101,6 +102,9 @@ a {
   width: 100%;
 }
 
+.main-news {
+  margin-bottom: 20px;
+}
 .main-news-item {
   max-width: 370px;
   position: relative;
@@ -149,6 +153,8 @@ a {
   position: relative;
   left: calc(-50vw + 50%);
   align-items: center;
+  text-align: -webkit-center;
+  margin-bottom: 20px;
 }
 .honor-board > div {
   max-width: 1200px;
@@ -189,6 +195,7 @@ a {
 .main-other {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 .main-other-biggest {
   max-width: 870px;
