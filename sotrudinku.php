@@ -7,7 +7,7 @@
         <img src="/bashelectrosbyt_project/assets/img/svg/razvandcar.svg" alt="" class="soutrudkin_main_list_item_image">
         <div class="sotrudnik_main_list_item_text">Развитие и карьера</div>
     </a>
-    <a href="#" class="sotrudnik_main_list_item">
+    <a href="sport.php" class="sotrudnik_main_list_item">
         <img src="/bashelectrosbyt_project/assets/img/svg/korport.svg" alt="" class="soutrudkin_main_list_item_image">    
         <div class="sotrudnik_main_list_item_text">Корпоративный спорт</div>
     </a>

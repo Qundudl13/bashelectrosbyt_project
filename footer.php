@@ -40,7 +40,7 @@
             </div>
             <img src="/bashelectrosbyt_project/assets/img/qr_code.png">
             <div class="footer_part_send">
-                Направить предложение по доработке<br>
+                Направить предложение по доработке
                 корпоративного портала
             </div>
         </div>

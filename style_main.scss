@@ -412,7 +412,34 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
     max-width: 1200px;
     width: 100%;
   }
-
+  
+  @mixin yellow_btn(){
+    border-radius: 10px;
+    background: #F28B00;
+    color: #FFF;
+    text-align: center;
+    font-family: Helios;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover{
+      background: #00427E;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 10px;
+      right: 20px;
+      top: 26px;
+      background: url(#{$assets_path}svg/arrow_white.svg);
+    }
+  }
 
    /*-------Миксины-------*/
 
@@ -511,32 +538,20 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
         @include flex-center-column();
         @include flex-start-column();
         &_send{
-            cursor: pointer;
-            border-radius: 5px;
-            background: #F28B00;
-            margin-top: 20px;
+            @include yellow_btn();
             width: 335px;
             height: 63px;
-            color: #FFF;
-            font-family: 'HeliosCond';
+            justify-content: flex-start;
+            display: flex;
+            font-family: HeliosCondRegular;
+            align-items: center;
+            padding-right: 100px;
+            line-height: auto;
+            text-align: left;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
             line-height: 18px;
-            position: relative;
             padding-left: 20px;
-            padding-top: 13px;
-            padding-bottom: 13px;
-            &:before{
-                content: "";
-                position: absolute;
-                width: 24px;
-                height: 10px;
-                right: 20px;
-                top: 26px;
-                background: url(#{$assets_path}svg/arrow_white.svg);
-
-            }
+            margin-top: 20px;
         }
         &_text{
           color: #000;
@@ -571,6 +586,16 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
     margin-top: 60px;
     margin-bottom: 60px;
     line-height: 28px;
+  }
+  .main_desc{
+    color: #4F4E4A;
+    text-align: center;
+    font-family: HeliosCondRegular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 60px;
+    line-height: 28px; 
   }
  
 
@@ -636,28 +661,8 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
     @include flex-center();
     width: 240px;
     height: 60px;
-    border-radius: 10px;
-    background: #F28B00;
-    color: #FFF;
-    text-align: center;
-    font-family: Helios;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 34px;
-    position: relative;
-    background: #F28B00;
-text-decoration: none;
-    &:before{
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 10px;
-      right: 20px;
-      top: 26px;
-      background: url(#{$assets_path}svg/arrow_white.svg);
-
-  }
+    @include yellow_btn();
+    
   }
   /*-----------------Молодежный актив------------------*/
   /*-----------------Сотруднику------------------*/
@@ -706,6 +711,8 @@ text-decoration: none;
       }
   }
   /*-----------------Сотруднику------------------*/
+
+
   /*-----------------Развитие------------------*/
 .razvitie_list{
   @include flex-spacebetween();
@@ -718,10 +725,129 @@ text-decoration: none;
     padding-left: 17px;
     padding-top: 40px;
     @include flex-start-column();
+    justify-content: flex-start;
     border-radius: 5px;
-    background: #EFF4F9;  
+    background: #EFF4F9;
+    position: relative;
+    &_title{
+      color: #000;
+      font-family: Helios;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    &_desc{
+      color: #000;
+      font-family: HeliosCondRegular;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      max-width: 236px;
+      width: 100%;
+    }
+    &_img{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    &:hover > &_title {
+      color: #00427E;
+    }
+    &:hover >  &_desc{
+      color: #00427E;
+    }
+    
+    &:before{
+      content: "→";
+      font-size: 23px;
+      position: absolute;
+      font-weight: bolder;
+      color: black;
+      left: 26px;
+      bottom: 20px;
+      transition: all 0.2s;
+    }
+    &:hover:before{
+      color: #00427E;
+      bottom: 17px;
+      font-size: 26px;
+    }
   }
 }
 
 
   /*-----------------Развитие------------------*/
+
+  /*-----------------Спорт------------------*/
+  .list_sport{
+    @include flex-spacebetween();
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+  
+    &_item{
+      max-width: 269px;
+      width: 100%;
+      height: 221px;
+      flex-shrink: 0;
+      border-radius: 5px;
+      position: relative;
+      @include flex-center();
+     
+      &:before{
+        z-index: 4;
+        content: "→";
+        font-size: 23px;
+        position: absolute;
+        font-weight: bolder;
+        color: white;
+        left: 23px;
+        bottom: 30px;
+      }
+      &_img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 2;
+        border-radius: 5px;
+      }
+      &_title{
+        color: #FFF;
+        text-align: center;
+        font-family: Helios;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 140% */
+        text-transform: uppercase;
+        z-index: 4;
+      }
+      &_upper{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        z-index: 3 ;
+        border-radius: 5px;
+    background: #00427E;
+      }
+    }
+  }
+  .sport_button{
+    @include yellow_btn();
+    width: 269px;
+    height: 60px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    @include flex-center();
+  }
+
+
+  /*-----------------Спорт------------------*/

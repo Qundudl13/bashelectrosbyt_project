@@ -29,7 +29,7 @@
                         <img src="/bashelectrosbyt_project/assets/img/svg/company.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">О компании</p>
                     </a>
-                    <a href="#" class="header_downer_nav_link">
+                    <a href="/bashelectrosbyt_project/sotrudinku.php" class="header_downer_nav_link">
                         <img src="/bashelectrosbyt_project/assets/img/svg/worker.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">Сотруднику</p>
                     </a>
