@@ -679,23 +679,49 @@ text-decoration: none;
         text-decoration: none;
         position: relative;
         &_text{
-          color: #00427E;
+          color: black;
           font-family: HeliosCondRegular;
           font-size: 18px;
           font-style: normal;
           font-weight: 400;
           line-height: 24px;
+          
         }
         &:before{
-          content: "\2192";
+          content: "→";
+          font-size: 23px;
+          position: absolute;
+          font-weight: bold;
+          color: black;
+          right: 26px;
         }
+        &:hover > &_text{
+          color: #00427E;
+           
+        }
+        &:hover:before{
+          color: #00427E;
+        }
+       
       }
   }
-
-
-
-
-
-
-
   /*-----------------Сотруднику------------------*/
+  /*-----------------Развитие------------------*/
+.razvitie_list{
+  @include flex-spacebetween();
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  &_item{
+    max-width: 270px;
+    width: 100%;
+    height: 334px;
+    padding-left: 17px;
+    padding-top: 40px;
+    @include flex-start-column();
+    border-radius: 5px;
+    background: #EFF4F9;  
+  }
+}
+
+
+  /*-----------------Развитие------------------*/

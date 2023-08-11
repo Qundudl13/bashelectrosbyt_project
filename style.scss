@@ -10,6 +10,7 @@
 a {
     text-decoration: none
 }
+/* ВРАППЕР В ГЛАВНОМ ХРАНИТСЯ   
 .wrapper {
     @include flex_column();
     width: 100%;
@@ -23,7 +24,9 @@ a {
             margin-bottom: 0;
             height: 10px;
             background: #00427E;
-            width: 80%
+            width: 80vw;
+            position: relative;
+            left: calc(-50vw + 50%);
         }
     }
     .main-news, .honor-board {
@@ -32,7 +35,7 @@ a {
         gap: 10px;
         padding: 30px 10px 30px 10px;
     } 
-}
+}*/
     
 .main-heading {
     color: #00427E;
@@ -141,6 +144,14 @@ a {
 }
 .honor-board {
     background: #EFF4F9;
+    width: 100vw;
+    max-width: none !important;
+    position: relative;
+    left: calc(-50vw + 50%);
+    align-items: center;
+    & > div {
+        max-width: 1200px;
+    }
     .main-section-list {
         .board-item {
             max-width: 270px;

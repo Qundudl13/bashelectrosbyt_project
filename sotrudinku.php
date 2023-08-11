@@ -1,9 +1,9 @@
-<?require("header.html")?> 
+<?require("header.php")?> 
 <h1 class="main_title">
    Сотруднику
 </h1>
 <div class="sotrudnik_main_list">
-    <a href="#" class="sotrudnik_main_list_item">
+    <a href="/bashelectrosbyt_project/razvitie_and_carier.php" class="sotrudnik_main_list_item">
         <img src="/bashelectrosbyt_project/assets/img/svg/razvandcar.svg" alt="" class="soutrudkin_main_list_item_image">
         <div class="sotrudnik_main_list_item_text">Развитие и карьера</div>
     </a>
@@ -16,5 +16,5 @@
         <div class="sotrudnik_main_list_item_text">Новому сотруднику</div>
     </a>   
 </div>
-<?require("footer.html")?>
+<?require("footer.php")?>
 
