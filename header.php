@@ -37,7 +37,7 @@
                         <img src="/bashelectrosbyt_project/assets/img/svg/services.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">Служебные сервисы</p>
                     </a>
-                    <a href="#" class="header_downer_nav_link">
+                    <a href="/bashelectrosbyt_project/news.php" class="header_downer_nav_link">
                         <img src="/bashelectrosbyt_project/assets/img/svg/news.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">Новости</p>
                     </a>
