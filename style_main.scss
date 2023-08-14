@@ -556,10 +556,10 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
         }
         &_text{
           color: #000;
-          font-family: 'HeliosCond';
+          font-family: HeliosCond;
           font-size: 14px;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 600;
           margin-bottom: 12px;
           line-height: 155%;
           &_span{
@@ -906,7 +906,7 @@ padding-top: 90px;
           font-family: Helios;
           font-size: 16px;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 600;
           border-bottom: 1px solid white;
           line-height: 24px;position: relative;
           &:before{

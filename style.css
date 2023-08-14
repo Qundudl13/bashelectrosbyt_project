@@ -13,7 +13,7 @@ a {
   font-family: Helios;
   font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -110,7 +110,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 28px;
 }
 .main-news-item-information::after {
@@ -216,16 +216,16 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 28px;
 }
 
 .information_company_links {
   color: #00427E;
-  font-family: "Helios";
+  font-family: Helios;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
   display: flex;
   justify-content: center;
@@ -371,7 +371,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 28px;
   margin-bottom: 25px;
 }
@@ -435,7 +435,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 20px;
   position: relative;
   text-align: left;
@@ -543,7 +543,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 24px;
 }
 .information_company_details_item .information_company_details_content_item small {
@@ -649,7 +649,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 32px;
 }
 .news_content_text_details_information ul {
@@ -665,7 +665,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 28px;
 }
 .news_content_text_links {
@@ -681,7 +681,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-family: Helios;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 28px;
   margin-bottom: 30px;
 }
