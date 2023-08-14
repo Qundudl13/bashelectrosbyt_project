@@ -3,7 +3,9 @@
 
 <h1 class = "main_title">Новости</h1>
 <div class = "calendar">
-    
+    <div class="calendar_cstm_wrapper">
+        <input type="text" id="calendar_custom" readonly class="calendar_cstm" placeholder="Поиск по дате">
+    </div>
 </div>
 <div class = "news_list">
     <a href = "#">
