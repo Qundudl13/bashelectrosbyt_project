@@ -434,7 +434,9 @@ body {
 }
 
 .footer {
+  position: relative;
   width: 100%;
+  margin-top: 40px;
   background: #EFF4F9;
   padding-bottom: 108px;
   display: flex;
@@ -543,6 +545,34 @@ body {
   font-weight: 400;
   margin-bottom: 60px;
   line-height: 28px;
+}
+
+.pre_footer1 {
+  position: absolute;
+  height: 10px;
+  width: 80vw;
+  top: -1px;
+  right: 0;
+  background: #F28B00;
+}
+
+.pre_footer2 {
+  position: absolute;
+  height: 12px;
+  width: 81vw;
+  top: -10px;
+  right: 0;
+  background: linear-gradient(297deg, #F28B00 9.38%, rgba(242, 139, 0, 0) 60.42%);
+  z-index: 5;
+}
+
+.pre_footer3 {
+  position: absolute;
+  width: 90vw;
+  top: -38px;
+  left: 0;
+  background: #00427E;
+  height: 37px;
 }
 
 /*------------------------- основной css ------------------------- */
@@ -1404,4 +1434,70 @@ body {
   border-radius: 2px;
 }
 
-/*ПЕРЕОПРЕДЕЛНИЕ КАЛЕНДАРЯ*//*# sourceMappingURL=style_main.css.map */
+/*ПЕРЕОПРЕДЕЛНИЕ КАЛЕНДАРЯ*/
+/*ВАКАНСИИ*/
+.list_vacancy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+.list_vacancy_item {
+  text-decoration: none;
+  width: 100%;
+  height: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 23px;
+  padding-left: 20px;
+  padding-top: 30px;
+  background: #EFF4F9;
+}
+.list_vacancy_item_title {
+  color: #00427E;
+  font-family: Helios;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  border-bottom: 1px solid #6C88B3;
+}
+.list_vacancy_item_desc {
+  color: #484847;
+  font-family: HeliosCondRegular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.list_vacancy_item:before {
+  content: "→";
+  position: absolute;
+  left: 22px;
+  bottom: 16px;
+  font-size: 30px;
+  color: #00427E;
+}
+
+.vacancy_title {
+  max-width: 970px;
+  color: #000;
+  text-align: center;
+  font-family: Helios;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  width: 100%;
+  line-height: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/*ВАКАНСИИ*//*# sourceMappingURL=style_main.css.map */
