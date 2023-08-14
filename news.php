@@ -8,7 +8,7 @@
     </div>
 </div>
 <div class = "news_list">
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -19,7 +19,7 @@
             </div>
         </div>
     </a>
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </a>
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -41,7 +41,7 @@
             </div>
         </div>
     </a>
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </a>
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -63,7 +63,7 @@
             </div>
         </div>
     </a>
-    <a href = "/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
