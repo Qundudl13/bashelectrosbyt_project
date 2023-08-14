@@ -1,5 +1,8 @@
 </div>
 <footer class="footer">
+    <div class="pre_footer1"></div>
+    <div class="pre_footer2"></div>
+    <div class="pre_footer3"></div>
     <div class="footer_wrapper">
         <div class="footer_part">
             <div class="footer_part_text">
