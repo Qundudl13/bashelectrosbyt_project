@@ -11,7 +11,7 @@
         <img src="/bashelectrosbyt_project/assets/img/svg/korport.svg" alt="" class="soutrudkin_main_list_item_image">    
         <div class="sotrudnik_main_list_item_text">Корпоративный спорт</div>
     </a>
-    <a href="#" class="sotrudnik_main_list_item">
+    <a href="welcome.php" class="sotrudnik_main_list_item">
         <img src="/bashelectrosbyt_project/assets/img/svg/new_worker.svg" alt="" class="soutrudkin_main_list_item_image">    
         <div class="sotrudnik_main_list_item_text">Новому сотруднику</div>
     </a>   

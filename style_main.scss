@@ -27,6 +27,7 @@
   
   body {
     margin: 0;
+    overflow-x: hidden;
   }
   
   /**
@@ -851,3 +852,475 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
 
 
   /*-----------------Спорт------------------*/
+
+/*-----------------WELCOME------------------*/
+.welcome_main{
+  width: 100vw;
+  left:calc(-50vw + 50%);
+  height: 660px;
+  background: #00427E;
+  position: relative;
+  @include flex-center();
+  margin-top: -12px;
+padding-top: 90px;
+  &_wrapper{
+    max-width: 1200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  &_text{
+    color: #FFF;
+    max-width: 750px;
+    font-family: Helios;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 112px;
+    margin-bottom: 50px;
+    & span{
+      color: #189AD7;
+      font-family: Helios;
+      font-size: 80px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 112px; 
+    }
+  }
+  &_control{
+    display: flex;
+    gap:110px;
+    align-items: center;
+    &_link{
+      @include yellow_btn();
+      @include flex-center();
+        width: 269px;
+        height: 60px
+    }
+    &_doc{
+          color: #FFF;
+          font-family: Helios;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          border-bottom: 1px solid white;
+          line-height: 24px;position: relative;
+          &:before{
+            content: "";
+            left: -70px;
+            border:none;
+            width: 51px;
+            height: 61px;
+            position: absolute;
+            top: -20px;
+            background: url(#{$assets_path}/svg/pdf_icon.svg);
+          }
+    }
+  }
+  &_video{
+    position: absolute;
+    right: 0;
+    top:150px;
+    max-width: 460px;
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+    &_wrapper{
+      border-radius: 20px;
+      position: relative;
+      width: 100%;
+      background: #D9D9D9;
+      z-index: 4;
+      height: 100%;
+      &:before{
+        z-index: -1;
+        content: "";
+        width: 85px;
+        height: 85px;
+        background: #F28B00;
+        position: absolute;
+        bottom: 1px;
+        border-radius: 100%;
+        left: -50px;
+      }
+      &:after{
+        z-index: -1;
+        content: "";
+        width: 232px;
+        height: 232px;
+        background: #F28B00;
+        position: absolute;
+        bottom: -80px;
+        border-radius: 100%;
+        right: -90px;
+      }
+    }
+    & video{
+      z-index: 555 ;
+      border-radius: 20px;
+      max-width: 460px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.welcome_yellow_dot{
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+  background: #F28B00;
+  position: absolute;
+  border-radius: 100%;
+  right: 100px;
+  top:-50px;
+}
+/*-----------------WELCOME------------------*/
+
+/*Истории успеха*/
+.history_uspex{
+  position: relative;
+  &_prev, &_next{
+    width: 65.4px;
+    height: 10.31px;
+    font-size: 20px;
+    color: #00427E;
+    position: absolute;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &_prev{
+    top: -50px;
+    right: 25px;
+  }
+  &_next{
+    top: -50px;
+    right: -15px;
+  }
+  &_wrapper{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  &_list{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap:30px;
+      width: 10000px;
+      &_item{
+        width: 370px;
+        height: 290px;
+        padding-left: 20px;
+        background: #EFF4F9;  
+        padding-top: 30px;
+        &_text{
+          margin-bottom: 22px;
+          color: #4F4E4A;
+          font-family: Helios;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          max-width: 300px;
+          line-height: 24px;
+        }
+        &_sotrudnik{
+          display: flex;
+          justify-content: flex-start;
+          gap:20px;
+          align-items: flex-start;
+          &_data{
+            @include flex-start-column();
+            padding-top: 5px;
+            &_name{
+              color: #00427E;
+              font-family: Helios;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 119.531%;
+              margin-bottom: 5px;
+            }
+            &_dolzh{
+              color: #868786;
+              font-family: HeliosCondRegular;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 119.531%;
+              max-width: 300px;
+            }
+          }
+        }
+      }
+  }
+}
+
+/*Истории успеха*/
+
+/*ФОРМА*/
+.razvitie{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:64px;
+  width: 100%;
+  max-width: 935px;
+  border-radius: 14px;
+  background: #FFF;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 51px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom: 115px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 66, 126, 0.15);
+  &_left{
+    @include flex-start-column();
+    & input{
+      height: 50px;
+      padding-left: 20px;
+      margin-bottom: 20px; 
+      width: 430px;
+      background: #EFF4F9;
+      border: none;
+      outline: none;
+      color:  #9F9F9F;
+      font-family: HeliosCondRegular;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.96px;
+    }
+    & textarea{
+      width: 430px;
+      height: 90px;
+      color: #9F9F9F;
+      font-family: HeliosCondRegular;
+      font-weight: 400;
+      background: #EFF4F9;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+      margin-bottom: 20px; 
+      padding-top: 16px;
+      resize: none;
+    }
+    & select{
+      background: #EFF4F9;
+      border: none;
+      outline: none;
+      padding-left: 20px;
+      height: 50px;
+      margin-bottom: 20px; 
+      width: 430px;
+      & option{
+        border:0px;
+        outline:0px;
+        color: #00427E;
+      font-family: HeliosCondRegular;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      height: 30px;
+      background-color: white;
+        &:hover{
+          color: white;
+          background-color: #F28B00 !important;
+        }
+      }
+    }
+    & select::-ms-expand {
+      display: none;
+    }
+  }
+}
+.form_submit_button{
+  @include yellow_btn();
+  @include flex-center();
+  width: 430px;
+  height: 60px;
+  outline: none;
+  border: none;
+}
+
+
+/*ФОРМА*/
+
+
+/*ПЕРЕОПРЕДЕЛНИЕ КАЛЕНДАРЯ*/
+.ui-datepicker-month, .ui-datepicker-year{
+  color: #000;
+text-align: center;
+font-family: HeliosCondRegular;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+}
+.ui-datepicker{
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-right: 40px;
+    width: 350px;
+    margin-top: 10px;
+height: auto;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    border: 1px solid #D8DDE7 !important;
+    background: #FFF;
+}
+.ui-datepicker *{
+  padding: 0 !important;
+  margin:  0 !important;
+}
+.ui-datepicker .ui-datepicker-header{
+  background: white;
+  border: none;
+}
+
+.ui-datepicker th{
+  padding-right: 13px !important;
+}
+.ui-datepicker-calendar{
+  & tr span{
+    color: #000;
+    text-align: center;
+    font-family: HeliosCondRegular;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+  }
+  & tbody{
+    position: relative;
+    &:before{
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+    }
+    &:after{
+      content: "";
+    display: block;
+    border-top: 1px solid #D8DDE7;
+    color: transparent;
+    position: absolute;
+    width: 93%;
+    margin-left: auto;
+    left: 3px;
+    margin-right: auto;
+    top: 0px;
+    }
+  }
+}
+.ui-state-default{
+  width: 25px;
+  height: 29px;
+  background:  transparent !important;
+  transition: all 0.3s;
+  border: none !important;
+  border-radius: 5px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ui-state-hover, .ui-state-active{
+  background: #F28B00 !important;
+  color:  black !important;
+}
+.ui-datepicker td a{
+  text-align: center;
+  padding-top: 5px !important;
+}
+ .ui-datepicker-next{
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  &:before{
+    content: "→";
+    position: absolute;
+    color: #D8DDE7;
+    width: 10px;
+    height: 10px;
+  }
+  
+}
+.ui-datepicker-next-hover{
+    background:  transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+.ui-datepicker-prev{
+  position: relative;
+  background: transparent;
+  cursor: pointer;
+  &:before{
+    content: "←";
+    position: absolute;
+    color: #D8DDE7;
+    width: 10px;
+    height: 10px;
+  }
+  
+}
+.ui-datepicker-prev-hover{
+    background:  transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+.calendar_cstm{
+  width: 319px;
+height: 56px;
+border-radius: 5px;
+border: 1px solid #D8DDE7;
+background: #FFF;
+box-shadow: 0px 4px 5px 0px rgba(0, 66, 126, 0.10);
+color: #000;
+font-family: HeliosCondRegular;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+outline: none;
+cursor: pointer;
+padding-left: 60px;
+  &::placeholder   {
+    color: #000;
+  font-family: HeliosCondRegular;
+  font-size: 18px;
+  }
+&_wrapper{
+  position: relative;
+  width: fit-content;
+  &:before{
+    top:18px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 20px;
+    background: url(#{$assets_path}/svg/calendar.svg);
+  }
+  &:after{
+    top: 22px;
+    content: "";
+    border: 5px solid transparent;
+    border-bottom: 5px solid orange;
+    position: absolute;
+    right: 20px;
+    border-radius: 2px;
+  }
+}
+}
+/*ПЕРЕОПРЕДЕЛНИЕ КАЛЕНДАРЯ*/
