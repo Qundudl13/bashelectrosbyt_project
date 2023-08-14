@@ -23,3 +23,6 @@ $( function() {
     $("#calendar_custom").datepicker();
     $("#date_time").datepicker();
 }); 
+$( function() {
+	$('.calendar_cstm_wrapper').append('#ui-datepicker-div');
+});
