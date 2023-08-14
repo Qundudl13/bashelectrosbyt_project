@@ -581,18 +581,14 @@ a {
     background: #EFF4F9;
     padding: 55px;
 }
-.test {
-    width: 200px;
-    height: 50px;
-    &::placeholder {
-        color: red;
-    }
-    &::-webkit-datetime-edit {
-        display: none;
-    }
-    &::-webkit-calendar-picker-indicator {
-        
-    }
+.calendar_cstm_wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+#ui-datepicker-div {
+    top: 45px !important;
+    left: 0 !important;
+    position: relative;
 }
 .news_list {
     display: flex;
