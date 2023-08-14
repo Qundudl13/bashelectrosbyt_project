@@ -131,9 +131,11 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   align-items: center;
   text-align: -webkit-center;
   margin-bottom: 100px;
+  padding: 40px;
 }
 .honor-board > div {
   max-width: 1200px;
+  margin-bottom: 15px;
 }
 .honor-board .main-section-list .board-item {
   max-width: 270px;
@@ -569,6 +571,10 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 #content_block_p {
   background: #EFF4F9;
   padding: 55px;
+}
+
+.calendar {
+  margin-bottom: 50px;
 }
 
 .calendar_cstm_wrapper {
