@@ -24,5 +24,5 @@ $( function() {
     $("#date_time").datepicker();
 }); 
 $( function() {
-	$('.calendar_cstm_wrapper').append('#ui-datepicker-div');
+	$('.calendar_cstm_wrapper').append($('#ui-datepicker-div'));
 });
