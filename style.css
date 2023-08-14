@@ -61,7 +61,7 @@ a {
 }
 .main-heading a:after {
   content: "";
-  background: url(/assets/img/svg/arrow-main-right.svg);
+  background: url(assets/img/svg/arrow-main-right.svg);
   right: -23px;
   top: 6px;
   position: absolute;
@@ -87,7 +87,7 @@ a:has(.main-news-item):hover .main-news-item-heading {
 }
 a:has(.main-news-item):hover .main-news-item-information::after {
   content: "";
-  background: url(/assets/img/svg/main-news-arrow-active.svg);
+  background: url(assets/img/svg/main-news-arrow-active.svg);
   bottom: -25px;
   position: absolute;
   width: 48px;
@@ -115,7 +115,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .main-news-item-information::after {
   content: "";
-  background: url(/assets/img/svg/main-news-arrow.svg);
+  background: url(assets/img/svg/main-news-arrow.svg);
   bottom: -25px;
   position: absolute;
   width: 24px;
@@ -159,7 +159,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .honor-board .main-section-list .board-item-information::before {
   content: "";
-  background: url(/assets/img/svg/main-arrow-circle.svg);
+  background: url(assets/img/svg/main-arrow-circle.svg);
   position: absolute;
   width: 48px;
   height: 48px;
@@ -204,7 +204,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .main-other-item::after {
   content: "";
-  background: url(/assets/img/svg/main-news-arrow.svg);
+  background: url(assets/img/svg/main-news-arrow.svg);
   position: absolute;
   width: 24px;
   height: 10px;
@@ -271,7 +271,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 .information_company_details_item_link::after {
   content: "";
   position: absolute;
-  background: url(/assets/img/svg/main-news-arrow.svg);
+  background: url(assets/img/svg/main-news-arrow.svg);
   width: 24px;
   height: 10px;
   right: 15px;
@@ -284,31 +284,31 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 
 .information_company_details_item_wrapper:nth-child(1) .information_company_details_item_link::before {
-  background: url(/assets/img/svg/corporate_culture_1.svg);
+  background: url(assets/img/svg/corporate_culture_1.svg);
   width: 55px;
   height: 60px;
 }
 
 .information_company_details_item_wrapper:nth-child(2) .information_company_details_item_link::before {
-  background: url(/assets/img/svg/corporate_culture_2.svg);
+  background: url(assets/img/svg/corporate_culture_2.svg);
   width: 60px;
   height: 38px;
 }
 
 .information_company_details_item_wrapper:nth-child(3) .information_company_details_item_link::before {
-  background: url(/assets/img/svg/corporate_culture_3.svg);
+  background: url(assets/img/svg/corporate_culture_3.svg);
   width: 60px;
   height: 52px;
 }
 
 .information_company_details_item_wrapper:nth-child(4) .information_company_details_item_link::before {
-  background: url(/assets/img/svg/corporate_culture_4.svg);
+  background: url(assets/img/svg/corporate_culture_4.svg);
   width: 48px;
   height: 56px;
 }
 
 .information_company_details_item_wrapper:nth-child(5) .information_company_details_item_link::before {
-  background: url(/assets/img/svg/corporate_culture_5.svg);
+  background: url(assets/img/svg/corporate_culture_5.svg);
   width: 48px;
   height: 57px;
 }
@@ -457,7 +457,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .information_company_details_item_content_block_list_item ul {
   text-align: left;
-  list-style: url(/assets/img/svg/list_style.svg);
+  list-style: url(assets/img/svg/list_style.svg);
   max-width: 90%;
 }
 .information_company_details_item_content_block_list_item ul li {
@@ -692,7 +692,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 .news_toggle div:first-child::before {
   content: "";
   position: absolute;
-  background: url(/assets/img/svg/main-news-arrow.svg);
+  background: url(assets/img/svg/main-news-arrow.svg);
   transform: rotate(180deg);
   width: 24px;
   height: 10px;
@@ -702,7 +702,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   color: #F28B00;
 }
 .news_toggle div:first-child:hover::before {
-  background: url(/assets/img/svg/news_arrow_active.svg);
+  background: url(assets/img/svg/news_arrow_active.svg);
 }
 .news_toggle div:last-child {
   padding-right: 30px;
@@ -710,7 +710,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 .news_toggle div:last-child::after {
   content: "";
   position: absolute;
-  background: url(/assets/img/svg/main-news-arrow.svg);
+  background: url(assets/img/svg/main-news-arrow.svg);
   width: 24px;
   height: 10px;
   right: 0;
@@ -719,7 +719,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   color: #F28B00;
 }
 .news_toggle div:last-child:hover::after {
-  background: url(/assets/img/svg/news_arrow_active.svg);
+  background: url(assets/img/svg/news_arrow_active.svg);
 }
 
 .other_news_heading {
