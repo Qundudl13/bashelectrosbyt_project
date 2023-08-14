@@ -28,43 +28,6 @@
                     </div>
                 </div>
                 <div class="header_downer">
-                    <nav class="header_downer_nav">
-                        <a href="#" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/company.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">О компании</p>
-                        </a>
-                        <a href="/bashelectrosbyt_project/sotrudinku.php" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/worker.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Сотруднику</p>
-                        </a>
-                        <a href="#" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/services.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Служебные сервисы</p>
-                        </a>
-                        <a href="#" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/news.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Новости</p>
-                        </a>
-                        <a href="#" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/sprav.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Справочная информация</p>
-                        </a>
-                        <a href="/bashelectrosbyt_project/libray.php" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/library.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Библиотека</p>
-                        </a>
-                        <a href="/bashelectrosbyt_project/molodezh.php" class="header_downer_nav_link">
-                            <img src="/bashelectrosbyt_project/assets/img/svg/activ.svg" alt="" class="header_downer_nav_link_img">
-                            <p class="header_downer_nav_link_text">Молодежный актив</p>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-<<<<<<< HEAD
-        </header>
-        <div class="wrapper">
-=======
-            <div class="header_downer">
                 <nav class="header_downer_nav">
                     <a href="/bashelectrosbyt_project/o_companii.php" class="header_downer_nav_link">
                         <img src="/bashelectrosbyt_project/assets/img/svg/company.svg" alt="" class="header_downer_nav_link_img">
@@ -97,6 +60,6 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <div class="wrapper">
->>>>>>> 390fe14dc0c2302afdf70c6e22bf2d06dc3580e4
+</header>
+<div class="wrapper">
+    
