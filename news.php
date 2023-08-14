@@ -1,4 +1,4 @@
-<!--<?require("header.php")?>-->
+<?require("header.php")?>
 
 
 <h1 class = "main_title">Новости</h1>
@@ -74,4 +74,4 @@
     </a>
 </div>
 
-<!-- <?require("footer.php")?> -->
+<?require("footer.php")?>
