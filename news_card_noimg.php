@@ -1,6 +1,5 @@
 <?require("header.php")?>
-<link rel = "stylesheet" href = "style.css">
-<link rel = "stylesheet" href = "style_main.css">
+
 <p class = "path_to_page">Главная/Новости</p>
 <div class = "news_content">
     <div class = "news_content_text">
