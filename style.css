@@ -34,7 +34,7 @@ a {
   display: flex;
   position: absolute;
   gap: 10px;
-  bottom: 45px;
+  bottom: 19px;
 }
 .main-slider-scroll div {
   background: #FFF;
@@ -48,6 +48,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 .main-heading a {
   color: #00427E;
@@ -145,7 +146,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .honor-board .main-section-list .board-item-information .name {
   color: #00427E;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -153,7 +153,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 .honor-board .main-section-list .board-item-information small {
   color: #868786;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -592,6 +591,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
+  margin-bottom: 200px;
 }
 .news_list .main-news-item {
   margin-bottom: 30px;
@@ -599,7 +599,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 
 .path_to_page {
   color: #868786;
-  font-family: HeliosCond;
+  font-family: HeliosCondRegular;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;

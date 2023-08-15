@@ -29,7 +29,7 @@
                 </div>
                 <div class="header_downer">
                 <nav class="header_downer_nav">
-                    <a href="/bashelectrosbyt_project/o_companii.php" class="header_downer_nav_link">
+                    <a href="/bashelectrosbyt_project/o_companii_results.php" class="header_downer_nav_link">
                         <img src="/bashelectrosbyt_project/assets/img/svg/company.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">О компании</p>
                     </a>
