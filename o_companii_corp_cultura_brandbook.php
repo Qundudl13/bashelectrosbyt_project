@@ -29,7 +29,7 @@
             <div class = "information_company_details_item_content_images_item"></div>
         </div>
         <a href = "#">
-            <div class = "information_company_details_content_item">
+            <div class = "information_company_details_content_file_item">
                 <div class = "information_company_details_content_img">
                     <img src = "assets/img/pdf_icon.png">
                 </div>
