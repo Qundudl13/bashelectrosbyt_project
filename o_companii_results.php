@@ -17,7 +17,7 @@
 </div>
 
 <div class = "information_company_details">
-    <div class = "information_company_details_item">
+    <div class = "information_company_details_wrapper">
         <div class = "information_company_details_text">Одна из ценностей ООО "ЭСКБ" - открытость.
             Нам важно, чтобы сотрудники были в курсе вызовов, стоящих перед компанией, знали результаты деятельности и понимали на чем основываются текущие цели.</div>
         <div class = "information_company_details_content">

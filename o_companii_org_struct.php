@@ -17,7 +17,7 @@
 </div>
 
 <div class = "information_company_details">
-    <div class = "information_company_details_item">
+    <div class = "information_company_details_wrapper">
         <div class = "information_company_details_text">Целевая функциональная структура ООО “ЭСКБ”</div>
         <div class = "information_company_details_img">
             <img src = "assets/img/concept_shemi.png" alt>

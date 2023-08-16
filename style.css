@@ -494,13 +494,21 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   line-height: 28px;
 }
 .information_company_details_item {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+.information_company_details_wrapper {
   padding-left: 15px;
   padding-right: 15px;
 }
-.information_company_details_item > div {
+.information_company_details_wrapper > div {
   margin-bottom: 20px;
 }
-.information_company_details_item .information_company_details_text {
+.information_company_details_wrapper .information_company_details_text {
   color: #4F4E4A;
   text-align: center;
   font-family: HeliosCond;
@@ -509,29 +517,29 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-weight: 400;
   line-height: 28px;
 }
-.information_company_details_item > .information_company_details_img img {
+.information_company_details_wrapper > .information_company_details_img img {
   width: 100%;
 }
-.information_company_details_item .information_company_details_content {
+.information_company_details_wrapper .information_company_details_content {
   max-width: 700px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
 }
-.information_company_details_item .information_company_details_content_item {
+.information_company_details_wrapper .information_company_details_content_item {
   border: 1px solid #BBBCBD;
   display: flex;
   padding: 15px;
   margin-bottom: 20px;
   gap: 20px;
 }
-.information_company_details_item .information_company_details_content_item div {
+.information_company_details_wrapper .information_company_details_content_item div {
   text-align: left;
 }
-.information_company_details_item .information_company_details_content_item:hover {
+.information_company_details_wrapper .information_company_details_content_item:hover {
   border: 1px solid #F28B00;
 }
-.information_company_details_item .information_company_details_content_item_text {
+.information_company_details_wrapper .information_company_details_content_item_text {
   color: #00427E;
   font-family: Helios;
   font-size: 16px;
@@ -539,7 +547,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   font-weight: 600;
   line-height: 24px;
 }
-.information_company_details_item .information_company_details_content_item small {
+.information_company_details_wrapper .information_company_details_content_item small {
   color: #868786;
   font-family: HeliosCond;
   font-size: 16px;
