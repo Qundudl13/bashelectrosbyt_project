@@ -1,4 +1,4 @@
-<?require("header.php")?>
+<?require("o_companii.php")?>
 <div class = "information_company_details_item_content">
     <div class = "information_company_details_item_content_block_heading">Брендбук</div>
     <p>То, как выглядит сотрудник на рабочем месте, взаимодействует с коллегами, а также ведет себя по отношении к компаниям-конкурентам, 

@@ -1,4 +1,4 @@
-<?require("header.php")?>
+<?require("o_companii.php")?>
 <div class = "information_company_details_item_content">
     <div class = "information_company_details_item_content_block_heading">Внешний вид сотрудников</div>
     <div class = "information_company_details_item_content_images">

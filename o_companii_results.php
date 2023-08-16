@@ -1,4 +1,3 @@
-<?require("header.php")?>
 <?require("o_companii.php")?>
     <div class = "information_company_details_item">
         <div class = "information_company_details_text">Одна из ценностей ООО "ЭСКБ" - открытость.
