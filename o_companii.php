@@ -1,5 +1,3 @@
-<?require("header.php")?>
-<!---->
 <h1 class = "main_title">О компании</h1>
 <div class = "information_company_links">
     <a href = "/bashelectrosbyt_project/o_companii_struct.php">
