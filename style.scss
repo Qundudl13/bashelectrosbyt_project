@@ -319,7 +319,6 @@ a {
     height: 57px;
 }
 .information_company_details_item_content {
-    display: none;
     &_images {
         display: flex;
         justify-content: center;
@@ -484,9 +483,6 @@ a {
 .information_company_details {
     text-align: center;
     margin-top: 80px;
-    &_item_content  {
-        display: none;
-    }
     &_item:nth-child(3) {
         display: flex;
         justify-content: center;
@@ -510,7 +506,6 @@ a {
     &_item {
         padding-left: 15px;
         padding-right: 15px;
-        display: none;
         &>div {
             margin-bottom: 20px;
         }

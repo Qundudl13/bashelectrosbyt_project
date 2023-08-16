@@ -314,9 +314,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   height: 57px;
 }
 
-.information_company_details_item_content {
-  display: none;
-}
 .information_company_details_item_content_images {
   display: flex;
   justify-content: center;
@@ -478,9 +475,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   text-align: center;
   margin-top: 80px;
 }
-.information_company_details_item_content {
-  display: none;
-}
 .information_company_details_item:nth-child(3) {
   display: flex;
   justify-content: center;
@@ -501,7 +495,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 .information_company_details_item {
   padding-left: 15px;
   padding-right: 15px;
-  display: none;
 }
 .information_company_details_item > div {
   margin-bottom: 20px;
