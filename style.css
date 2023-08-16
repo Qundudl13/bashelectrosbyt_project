@@ -320,10 +320,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   gap: 20px;
   margin-bottom: 30px;
 }
-.information_company_details_item_content_images + a > div {
-  margin-right: 100px;
-  margin-left: 100px;
-}
 .information_company_details_item_content_images_item {
   min-width: 200px;
   max-width: 200px;
