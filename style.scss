@@ -246,7 +246,7 @@ a {
         padding-right: 10px;
         border-bottom: 1px solid #6C88B3;
         cursor: pointer;
-        &.active {
+        a:has(&):active {
             color: #F28B00;
             border-bottom: 1px solid #F28B00;
         }

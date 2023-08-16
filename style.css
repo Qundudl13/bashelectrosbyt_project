@@ -240,7 +240,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   border-bottom: 1px solid #6C88B3;
   cursor: pointer;
 }
-.information_company_links_item.active {
+a:has(.information_company_links_item):active {
   color: #F28B00;
   border-bottom: 1px solid #F28B00;
 }
