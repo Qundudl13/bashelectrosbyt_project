@@ -457,6 +457,16 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
   .header{
     height: 200px;
     width: 100%;
+    position: relative;
+    &:before{
+      width: 100%;
+      height: 1px;
+      background: #EEF1F5;
+      content: "";
+      top:95px;
+      position: absolute;
+      left: 0;
+    }
     @include flex-center();
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 13px;
@@ -467,7 +477,7 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
     }
     &_upper{
         padding-top: 20px;
-        padding-bottom: 20px;
+        margin-bottom: -20px;
         width: 100%;
         @include flex-spacebetween();
         &_control{
@@ -508,10 +518,13 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
         &_nav{
             @include flex-spacebetween();
             width: 100%;
+            height: 123px;
+         
             &_link{
                 @include flex-center-column();
                 gap:10px;
                 text-decoration: none;
+                position: relative;
                 &_text{
                     color: #00427E;
                     font-family: 'HeliosCond';
@@ -520,8 +533,123 @@ $assets_path : "/bashelectrosbyt_project/assets/img/";
                     font-weight: 400;
                     line-height: normal;
                 }
+             
             }
         }
+    }
+  }
+  .nav_element{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;   padding-bottom: 27px;
+    margin-top: 20px;
+    &:hover > .subheader{
+      display: flex !important;
+    }
+    &:active > .subheader{
+      display: flex !important;
+    }
+    &:focus > .subheader{
+      display: flex !important;
+    }
+  }
+ 
+  .sub_subheader{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 100%;
+    background: white;
+    top:0px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  }
+  .subheader{
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: fit-content;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 5555555555;
+    background: white;
+   &_element{
+    width: 100%;
+    background: transparent;
+    transition: 0.2s all;
+     color: #00427E;
+     width: 274px;
+     &_wth_child{
+      position: relative;
+      &:hover > .sub_subheader{
+        display: flex !important;
+      }
+      &:active > .sub_subheader{
+        display: flex !important;
+      }
+      &:focus > .sub_subheader{
+        display: flex !important;
+      }
+      &:before{
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #00427E !important;
+        border-right: 1px solid #00427E !important;
+        margin: 16px 0 0 10px;
+        transform: rotate(45deg);
+        display: inline-block;
+        transition: 0.2s all;
+        position: absolute;
+        right: 20px;
+
+      }
+      &:hover:before{
+        border-top: 1px solid white !important;
+        border-right: 1px solid white !important;
+      }
+     }
+    &:hover{
+      background: #F28B00;
+      color: white;
+    }
+    &:hover > .subheader_a:before{
+      background: #F28B00;
+    }
+   
+   }
+    &_a{
+      width: 86%;
+      white-space: nowrap;
+      display: block;
+      margin-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      color: inherit;
+     text-align: left;
+      font-family: HeliosCondRegular;
+      font-size: 14px;
+      border-bottom-width: 90%;
+      font-weight: 500;
+      line-height: normal;
+      position: relative;
+      &:before{
+        content: "";
+        transition: 0.2s all;
+        height: 1px;
+        background:  #D1D7E1;
+        position: absolute;
+        top:99%;
+        left: 0;
+        width: 100%;
+      }
     }
   }
   .footer{
@@ -1367,6 +1495,10 @@ padding-left: 60px;
     padding-left: 20px;
     padding-top: 30px;
     background: #EFF4F9;
+    &:hover:before{
+      font-size: 40px;
+      bottom: 10px;
+    }
     &_title{
       color: #00427E;
       font-family: Helios;
@@ -1386,6 +1518,7 @@ padding-left: 60px;
       line-height: 20px;
     }
     &:before{
+      transition: all 0.2s;
       content: "→";
       position: absolute;
       left: 22px;
@@ -1410,6 +1543,81 @@ padding-left: 60px;
   margin-right: auto;
   margin-bottom: 30px;
 }
-
+.invite{
+  @include flex-spacebetween();
+  align-items: flex-start;
+  &_item{
+    max-width: 370px;
+    width: 100%;
+    @include flex-start-column();
+    color: #000;
+font-family: HeliosCondRegular;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+    gap: 20px;
+    & ul{
+      padding-left: 25px;
+      margin-top: 5px;
+    }
+  }
+}
+.vacancy_doc{
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  max-width: 770px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid #BBBCBD;
+  @include flex-start-column();
+  &_element{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:30px;
+      &_about{
+        @include flex-start-column();
+        gap: 3px;
+        &_title{
+          color: #00427E;
+          font-family: Helios;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22px;
+          border-bottom: 1px solid #D8DDE7;
+        }
+        &_typedoc{
+          color: #868786;
+          font-family: HeliosCondRegular;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; 
+        }
+      }
+  }
+}
+.vacancy_callback{
+  color: #00427E;
+text-align: center;
+font-family: Helios;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; 
+text-align: center;
+width: 100%;
+margin-top: 60px;
+margin-bottom: 40px;
+}
 
 /*ВАКАНСИИ*/
