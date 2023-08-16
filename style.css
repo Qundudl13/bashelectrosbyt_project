@@ -170,7 +170,6 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 }
 
 .main-other {
-  background: red;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 100px;
