@@ -471,6 +471,36 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   top: -5px;
 }
 
+.information_company_details_content_file_item {
+  border: 1px solid #BBBCBD;
+  display: flex;
+  padding: 15px;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+.information_company_details_content_file_item div {
+  text-align: left;
+}
+.information_company_details_content_file_item:hover {
+  border: 1px solid #F28B00;
+}
+.information_company_details_content_file_item_text {
+  color: #00427E;
+  font-family: Helios;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.information_company_details_content_file_item small {
+  color: #868786;
+  font-family: HeliosCond;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .information_company_details {
   text-align: center;
   margin-top: 80px;

@@ -23,7 +23,7 @@
             во многом определяет отношение к нашей компании в целом. Каждый из нас является лицом ООО “ЭСКБ”, ее неотъемлемой частью, 
             поэтому важно не просто знать, но и использовать данный кодекс в ежедневной работе.</p>
         <a href = "#">
-            <div class = "information_company_details_content_item">
+            <div class = "information_company_details_content_file_item">
                 <div class = "information_company_details_content_img">
                     <img src = "assets/img/pdf_icon.png">
                 </div>

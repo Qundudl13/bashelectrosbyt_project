@@ -480,6 +480,35 @@ a {
         }
     }
 }
+.information_company_details_content_file_item {
+    border: 1px solid #BBBCBD;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 20px;
+    gap: 20px;
+    div {
+        text-align: left;
+    }
+    &:hover {
+        border: 1px solid #F28B00;
+    }
+    &_text {
+        color: #00427E;
+        font-family: Helios;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    & small {
+        color: #868786;
+        font-family: HeliosCond;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
 .information_company_details {
     text-align: center;
     margin-top: 80px;
