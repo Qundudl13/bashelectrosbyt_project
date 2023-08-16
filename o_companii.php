@@ -1,7 +1,7 @@
 <?require("header.php")?>
     <h1 class = "main_title">О компании</h1>
     <div class = "information_company_links">
-        <a href = "/bashelectrosbyt_project/o_companii_struct.php">
+        <a href = "/bashelectrosbyt_project/o_companii_org_struct.php">
             <div class = "information_company_links_item">Организационная структура</div>
         </a>
         <a href = "#">

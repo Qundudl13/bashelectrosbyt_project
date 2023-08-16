@@ -474,6 +474,7 @@ a:has(.main-news-item):hover .main-news-item-information::after {
 .information_company_details {
   text-align: center;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 .information_company_details_item:nth-child(3) {
   display: flex;
