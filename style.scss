@@ -481,10 +481,12 @@ a {
     }
 }
 .information_company_details_content_file_item {
+    max-width: 900px;
     border: 1px solid #BBBCBD;
     display: flex;
     padding: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     gap: 20px;
     div {
         text-align: left;
