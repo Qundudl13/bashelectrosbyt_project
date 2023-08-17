@@ -658,10 +658,12 @@ a {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            position: absolute;
+            margin-top: 20px;
         }
         &_details {
             color: #484847;
-            font-family: HeliosCond;
+            font-family: HeliosCondRegular;
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
@@ -774,7 +776,7 @@ a {
         margin-bottom: 15px;
         div {
             color: #515151;
-            font-family: HeliosCond;
+            font-family: HeliosCondRegular;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -782,7 +784,7 @@ a {
         }
         a {
             color: #00427E;
-            font-family: HeliosCond;
+            font-family: HeliosCondRegular;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
@@ -792,5 +794,37 @@ a {
                 color: #F28B00;
             }
         }
+    }
+}
+
+.sprav_info_details_item_wrapper {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 60px;
+        z-index: 999;
+        left: 15px;
+        top: 10px;
+    }
+    &:nth-child(1)::before {
+        background: url(assets/img/svg/sprav_info_1.svg);
+    }
+    &:nth-child(2)::before {
+        background: url(assets/img/svg/sprav_info_2.svg);
+    }
+    &:nth-child(3)::before {
+        background: url(assets/img/svg/sprav_info_3.svg);
+    }
+    &:nth-child(4)::before {
+        background: url(assets/img/svg/sprav_info_4.svg);
+        width: 59px;
+    }
+    &:nth-child(5)::before {
+        background: url(assets/img/svg/sprav_info_5.svg);
+    }
+    &:nth-child(6)::before {
+        background: url(assets/img/svg/sprav_info_6.svg);
     }
 }
