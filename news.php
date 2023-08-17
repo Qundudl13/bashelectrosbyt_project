@@ -41,7 +41,7 @@
             </div>
         </div>
     </a>
-    <a href = "/bashelectrosbyt_project/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card_noimg.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </a>
-    <a href = "/bashelectrosbyt_project/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card_noimg.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>
@@ -63,7 +63,7 @@
             </div>
         </div>
     </a>
-    <a href = "/bashelectrosbyt_project/news_card.php">
+    <a href = "/bashelectrosbyt_project/news_card_noimg.php">
         <div class = "main-news-item">
             <div class = "main-news-item-img">
                 <img src = "assets/img/tmp_main-news1.png" alt>

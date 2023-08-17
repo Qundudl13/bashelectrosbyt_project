@@ -234,15 +234,14 @@ a:has(.main-news-item):hover .main-news-item-information::after {
   margin-left: auto;
   margin-right: auto;
 }
+.information_company_links a:visited {
+  color: #00427E;
+}
 .information_company_links_item {
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 1px solid #6C88B3;
   cursor: pointer;
-}
-.information_company_links_item.active {
-  color: #F28B00;
-  border-bottom: 1px solid #F28B00;
 }
 
 .information_company_details_item_link {
