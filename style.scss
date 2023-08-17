@@ -227,7 +227,6 @@ a {
 }
 
 .information_company_links {
-    color: #00427E;
     font-family: Helios;
     font-size: 18px;
     font-style: normal;
@@ -245,6 +244,7 @@ a {
         color: #00427E;
     }
     &_item {
+        color: #00427E !important;
         padding-left: 10px;
         padding-right: 10px;
         border-bottom: 1px solid #6C88B3;
@@ -797,7 +797,7 @@ a {
     }
 }
 
-.sprav_info_details_item_wrapper {
+.guide_info_details_item_wrapper {
     position: relative;
     &::before {
         content: "";
@@ -826,5 +826,152 @@ a {
     }
     &:nth-child(6)::before {
         background: url(assets/img/svg/sprav_info_6.svg);
+    }
+}
+.guide_info_staff {
+    margin-bottom: 80px;
+    & > div {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &_header {
+        display: flex;
+        justify-content: space-between;
+
+        &_input {
+            max-width: 570px;
+            width: 100%;
+            position: relative;
+            input {
+                width: 100%;
+                padding: 15px;
+                color: #868786;
+                font-family: HeliosCondRegular;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                background: url(assets/img/svg/find_guide.svg);    
+                width: 18px;
+                height: 18px;
+                top: 18px;
+                right: 15px;
+            }
+        }
+        &_links {
+            text-decoration: underline;
+            color: #00427E;
+            font-family: HeliosCondRegular;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+        }
+    }
+    &_content {
+        &_table {
+            border-spacing: 0px;
+            width: 100%;
+            &_heading {
+                background: #EFF4F9;
+                color: #000;
+                text-align: center;
+                font-family: Helios;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+            }
+            th, td {
+                padding: 10px;
+            }
+            td {
+                border: 1px solid #EFF4F9;
+                color: #000;
+                font-family: HeliosCondRegular;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+
+                img {
+                    cursor: pointer;
+                    vertical-align: middle;
+                }
+                p, a {
+                    color: #00427E;
+                    cursor: pointer;
+                    &:hover {
+                        color: #F28B00;
+                    }
+                }
+            }
+        }
+    }
+}
+.guide_info_popup {
+    display: none; //NEED "NONE"
+    background: rgba(0, 66, 126, 0.80);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: calc(-50vw + 50%);
+    z-index: 9998;
+
+    &_content {
+        display: flex;
+        position: relative;
+        width: 570px;
+        height: 304px;
+        top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(assets/img/svg/guide_popup_close.svg);
+            right: 20px;
+            top: -10px;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+        }
+
+        &_text {
+            padding: 15px;
+            background: #FFF;
+            border-radius: 0px 0px 10px 0px;
+            &_name {
+                color: #00427E;
+                font-family: Helios;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            &_property {
+                display: flex;
+                justify-content: space-between;
+                div {
+                    width: 100%;
+                    color: #4F4E4A;
+                    font-family: HeliosCondRegular;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    &:last-child {
+                        font-size: 12px;
+                        white-space: wrap;
+                    }
+                }
+            }
+        }
     }
 }
