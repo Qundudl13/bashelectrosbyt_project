@@ -66,7 +66,7 @@
                     </a>
                     </div>
                     <div class="nav_element">
-                    <a href="#" class="header_downer_nav_link">
+                    <a href="/bashelectrosbyt_project/sprav_info.php" class="header_downer_nav_link">
                         <img src="/bashelectrosbyt_project/assets/img/svg/sprav.svg" alt="" class="header_downer_nav_link_img">
                         <p class="header_downer_nav_link_text">Справочная информация</p>
                     </a>
