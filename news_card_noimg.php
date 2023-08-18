@@ -58,8 +58,12 @@
                 </div>
             </div>
             <div class = "news_toggle">
-                <div>Предыдущая новость</div>
-                <div>Следующая новость</div>
+                <a href = "#">
+                    <div>Предыдущая новость</div>
+                </a>
+                <a href = "#">
+                    <div>Следующая новость</div>
+                </a>
             </div>
         </div>
     <aside class = "other_news">

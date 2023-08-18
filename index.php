@@ -13,7 +13,10 @@
     <div class = "main-news">
         <div class = "main-heading">
             Будь в курсе последних новостей
-            <a href = "#">Все новости</a>
+            <a href = "#">
+                <p>Все новости</p>
+                <div></div>
+            </a>
         </div>
         <div class = "main-section-list">
             <a href = "#">
@@ -54,7 +57,10 @@
     <div class = "honor-board">
         <div class = "main-heading">
             Доска почета
-            <a href = "#">Все сотрудники</a>
+            <a href = "#">
+                <p>Все сотрудники</p>
+                <div></div>
+            </a>
         </div>
         <div class = "main-section-list">
             <a href = "#">
@@ -140,6 +146,25 @@
                 </div>
             </a>
         </div> 
+    </div>
+    <div class = "main_popup">
+        <div class = "main_popup_content">
+            <div class = "main_popup_content_close">
+                <img src = "assets/img/svg/guide_popup_close.svg" alt>
+            </div>
+            <div class = "main_popup_content_img">
+                <img src = "assets/img/tmp_main_popup.png" alt>
+            </div>
+            <div class = "main_popup_content_text">
+                <div class = "main_popup_content_text_name">Антонова Ольга Викторовна</div>
+                <div class = "main_popup_content_text_about">Менеджер по работе с клиентами, клиентский отдел</div>
+                <div class = "main_popup_content_text_description">
+                    <div>Трудовой путь в энергетике и в ООО “ЭСКБ”.</div>
+                    <div>За какие заслуги вручена награда.</div>
+                    <div>Перечисление иных наград.</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class = "page-border"></div>
 

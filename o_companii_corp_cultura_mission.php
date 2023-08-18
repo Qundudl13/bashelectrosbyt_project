@@ -1,4 +1,5 @@
 <?require("header.php")?>
+<p class = "path_to_page">Главная / О компании /Корпоративная культура</p>
 <h1 class = "main_title">О компании</h1>
 <div class = "information_company_links">
     <a href = "/bashelectrosbyt_project/o_companii_org_struct.php">

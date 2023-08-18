@@ -1,6 +1,5 @@
 <?require("header.php")?>
-<link rel = "stylesheet" type = "text/css" href = "style_main.css">
-<link rel = "stylesheet" type = "text/css" href = "style.css">
+
 <p class = "path_to_page">Главная / Справочная информация</p>
 <h1 class = "main_title">Справочная информация</h1>
 <div class = "guide_info_staff">
@@ -79,6 +78,9 @@
 </div>
 <div class = "guide_info_popup">
     <div class = "guide_info_popup_content">
+        <div class = "guide_info_popup_content_close">
+            <img src = "assets/img/svg/guide_popup_close.svg" alt>
+        </div>
         <div class = "guide_info_popup_content_img">
             <img src = "assets/img/tmp_guide_popup.png" alt>
         </div>
@@ -90,7 +92,7 @@
             </div>
             <div class = "guide_info_popup_content_text_property">
                 <div>E-mail:</div>
-                <div>mail@bashesk.ru</div>
+                <div><a href = "#">mail@bashesk.ru</a></div>
             </div>
             <div class = "guide_info_popup_content_text_property">
                 <div>Должность:</div>

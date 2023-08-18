@@ -75,5 +75,8 @@
         </div>
     </a>
 </div>
+<div class = "news_loader">
+    <img src = "assets/img/svg/loading.svg" alt>
+</div>
 
 <?require("footer.php")?>

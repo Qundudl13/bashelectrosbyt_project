@@ -8,28 +8,28 @@
             </a>   
         </div>
         <div class = "guide_info_details_item_wrapper">
-            <a href = "/bashelectrosbyt_project/">
+            <a href = "/bashelectrosbyt_project/sprav_info_vnd.php">
                 <div class = "information_company_details_item_link">Справочник ВНД</div>
             </a> 
         </div>
         <div class = "guide_info_details_item_wrapper">
-            <a href = "/bashelectrosbyt_project/">
+            <a href = "#">
                 <div class = "information_company_details_item_link">Образцы документов</div>
             </a>
         </div>
         <div class = "guide_info_details_item_wrapper">
-            <a href = "/bashelectrosbyt_project/">
+            <a href = "#">
                 <div class = "information_company_details_item_link">Маршруты согласований</div>
             </a>
             
         </div>
         <div class = "guide_info_details_item_wrapper">
-            <a href = "/bashelectrosbyt_project/">
+            <a href = "#">
                 <div class = "information_company_details_item_link">Инструкции</div>
             </a>
         </div>
         <div class = "guide_info_details_item_wrapper">
-            <a href = "/bashelectrosbyt_project/">
+            <a href = "#">
                 <div class = "information_company_details_item_link">Корпоративный глоссарий</div>
             </a>
         </div>
