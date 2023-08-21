@@ -26,3 +26,9 @@ $( function() {
 $( function() {
 	$('.calendar_cstm_wrapper').append($('#ui-datepicker-div'));
 });
+$(function() {
+	$( "#guide_info_staff_header_select" ).selectmenu({
+		appendTo: "#guide_info_staff_header_select-button"
+	  });
+	//$('.ui-selectmenu-menu').append($('.guide_info_staff_header>span'));
+})
